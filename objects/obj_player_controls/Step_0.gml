@@ -1,7 +1,7 @@
 //Movement mechanics
 left = keyboard_check(ord("A"))
 right = keyboard_check(ord("D"))
-jump = keyboard_check_pressed(vk_space)
+jump = keyboard_check_pressed(ord("W"))
 grounded = place_meeting(x, y+1, obj_ground)
 
 if left{ //moves left
