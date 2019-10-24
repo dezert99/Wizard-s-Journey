@@ -1,7 +1,7 @@
 //Movement mechanics
 left = keyboard_check(ord("A"))
 right = keyboard_check(ord("D"))
-jump = keyboard_check(vk_space)
+jump = keyboard_check_pressed(vk_space)
 grounded = place_meeting(x, y+1, obj_ground)
 
 if left{ //moves left
@@ -16,11 +16,15 @@ if (left and right) or (!left and !right){ //doesn't move at all
 
 if grounded{
 	yspd = 0
-	if jump{ //player jumps
-		yspd = -10
-	}
+	jumps_left = 2
+	
 } else{
 	yspd += grav //player falls
+}
+
+if (jump and jumps_left > 0) { //player jumps
+	yspd = -10
+	jumps_left--;
 }
 
 if place_meeting(x + xspd, y, obj_ground){ //land horizontal collisions

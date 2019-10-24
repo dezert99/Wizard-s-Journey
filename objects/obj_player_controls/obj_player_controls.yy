@@ -2,7 +2,7 @@
     "id": "5ffadf86-b760-46df-b693-d18b366c204b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_player1",
+    "name": "obj_player_controls",
     "eventList": [
         {
             "id": "75df1a54-3854-4ef5-a8e6-1d03d81afd23",
@@ -22,6 +22,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "5ffadf86-b760-46df-b693-d18b366c204b"
+        },
+        {
+            "id": "19d9629c-e83d-4e3b-9857-4a97bccca527",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
             "m_owner": "5ffadf86-b760-46df-b693-d18b366c204b"
         }
     ],
