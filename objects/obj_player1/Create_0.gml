@@ -1,7 +1,7 @@
-x_spd = 0
-y_spd = 0
+xspd = 0
+yspd = 0
 
+//Jump Mechanics
 mspd = 5 //how fast player is able to move
-grav = 5
-jump_amt = 8
-grounded = place_meeting(x, y-1, obj_spr_ground)
+grav = 0.5
+grounded = place_meeting(x, y-1, obj_ground)

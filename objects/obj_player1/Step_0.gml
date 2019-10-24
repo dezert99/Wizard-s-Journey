@@ -1,21 +1,41 @@
-if keyboard_check(ord("A")){
-	x_spd = -mspd
-} else if keyboard_check(ord("D")){
-	x_spd = mspd
-} else{
-	x_spd = 0
-}
+//Movement mechanics
+left = keyboard_check(ord("A"))
+right = keyboard_check(ord("D"))
+jump = keyboard_check(vk_space)
+grounded = place_meeting(x, y+1, obj_ground)
 
-if keyboard_check(ord("W")) and grounded == true{
-	y_spd += jump_amt
+if left{ //moves left
+	xspd = -mspd
 }
-
+if right{ //moves right
+	xspd = mspd
+}
+if (left and right) or (!left and !right){ //doesn't move at all
+	xspd = 0
+}
 
 if grounded{
-	y_spd = 0
+	yspd = 0
+	if jump{ //player jumps
+		yspd = -10
+	}
+} else{
+	yspd += grav //player falls
 }
 
+if place_meeting(x + xspd, y, obj_ground){ //land horizontal collisions
+	while !place_meeting(x + sign(xspd), y, obj_ground){
+		x += sign(xspd)
+	}
+	xspd = 0
+}
 
-x += x_spd
-y += y_spd
+if place_meeting(x, y + yspd, obj_ground){ //land vertical collisions
+	while !place_meeting(x, y + sign(yspd), obj_ground){
+		y += sign(yspd)
+	}
+	yspd = 0
+}
 
+x += xspd
+y += yspd
