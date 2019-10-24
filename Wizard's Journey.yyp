@@ -98,7 +98,7 @@
             "Key": "5ffadf86-b760-46df-b693-d18b366c204b",
             "Value": {
                 "id": "28c308bb-fa54-41ea-89f7-f2bc49b3f22a",
-                "resourcePath": "objects\/testguy\/testguy.yy",
+                "resourcePath": "objects\/player1\/player1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -156,6 +156,14 @@
                 "id": "07e4ec33-d018-4040-9ffa-4d40f4ea926e",
                 "resourcePath": "views\/968bc1bb-0ff4-4ed8-bc6a-7450e87d8bb4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a45d06b8-09f0-467c-95b1-520c9c793bc7",
+            "Value": {
+                "id": "940fcb9b-6aeb-47c3-b86e-8a75954daf78",
+                "resourcePath": "sprites\/spr_player1_idle\/spr_player1_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
