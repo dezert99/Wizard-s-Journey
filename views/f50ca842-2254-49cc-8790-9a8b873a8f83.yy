@@ -7,7 +7,8 @@
         "3034daf3-43c3-43b7-ad1a-b498efcbf791",
         "b2a9444d-8d14-454b-b224-6a7bacad3b97",
         "4cad8f14-5c58-4f0c-ba93-c794cdc61ea1",
-        "927df7f4-7610-4626-b507-9b0587f49e44"
+        "927df7f4-7610-4626-b507-9b0587f49e44",
+        "400dfa94-33b2-476c-ac3d-a3f6536c3c54"
     ],
     "filterType": "GMSprite",
     "folderName": "spr_group_player2",
