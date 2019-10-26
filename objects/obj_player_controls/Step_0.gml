@@ -5,12 +5,17 @@ jump = keyboard_check_pressed(ord("W"))
 grounded = place_meeting(x, y+1, obj_ground)
 
 if left{ //moves left
+	sprite_index = spr_player1_run
+	image_xscale = -1
 	xspd = -mspd
 }
 if right{ //moves right
+	sprite_index = spr_player1_run
+	image_xscale = 1
 	xspd = mspd
 }
 if (left and right) or (!left and !right){ //doesn't move at all
+	sprite_index = spr_player1_idle
 	xspd = 0
 }
 
@@ -20,6 +25,11 @@ if grounded{
 	
 } else{
 	yspd += grav //player falls
+	if yspd < 0{
+		sprite_index = spr_player1_jump //jumping animation
+	} else{
+		sprite_index = spr_player1_falling //falling animation
+	}
 }
 
 if (jump and jumps_left > 0) { //player jumps
@@ -31,6 +41,7 @@ if place_meeting(x + xspd, y, obj_ground){ //land horizontal collisions
 	while !place_meeting(x + sign(xspd), y, obj_ground){
 		x += sign(xspd)
 	}
+	sprite_index = spr_player1_idle
 	xspd = 0
 }
 
@@ -38,6 +49,7 @@ if place_meeting(x, y + yspd, obj_ground){ //land vertical collisions
 	while !place_meeting(x, y + sign(yspd), obj_ground){
 		y += sign(yspd)
 	}
+	sprite_index = spr_player1_idle
 	yspd = 0
 }
 
