@@ -1,10 +1,11 @@
+//testing
+
 // Movement mechanics
 left = keyboard_check(left_key)
 right = keyboard_check(right_key)
 jump = keyboard_check_pressed(jump_key)
 grounded = place_meeting(x, y+1, obj_ground)
 spell_cast = keyboard_check_pressed(cast_key)
-colliding_with_player = collision_line(x-22,y+22,x+15,y+22,obj_player_controls,false, true);
 
 if left{ // moves left
 	sprite_index = spr_run
@@ -35,10 +36,7 @@ if grounded{
 }
 
 if (jump and jumps_left > 0) { // player jumps
-	if(colliding_with_player && colliding_with_player.y-y >=0 && colliding_with_player.y-y <= 16){
-		testCollideCount++;
-	}
-	yspd = -12
+	yspd = -10
 	jumps_left--;
 }
 
@@ -62,10 +60,7 @@ x += xspd
 y += yspd
 
 // Spell casting
-if spell_cast and mana > 20{
+if spell_cast{
 	instance_create_depth(x, y, 0, attack)
-	mana -= 20
 }
-
-
 
