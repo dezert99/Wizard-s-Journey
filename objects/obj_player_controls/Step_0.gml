@@ -4,7 +4,7 @@ right = keyboard_check(right_key)
 jump = keyboard_check_pressed(jump_key)
 grounded = place_meeting(x, y+1, obj_ground)
 spell_cast = keyboard_check_pressed(cast_key)
-colliding_with_player = place_meeting(x-23,y+yspd,obj_player_controls);
+colliding_with_player = collision_line(x-22,y+22,x+15,y+22,obj_player_controls,false, true);
 
 if left{ // moves left
 	sprite_index = spr_run
@@ -35,6 +35,9 @@ if grounded{
 }
 
 if (jump and jumps_left > 0) { // player jumps
+	if(colliding_with_player && colliding_with_player.y-y >=0 && colliding_with_player.y-y <= 16){
+		testCollideCount++;
+	}
 	yspd = -12
 	jumps_left--;
 }

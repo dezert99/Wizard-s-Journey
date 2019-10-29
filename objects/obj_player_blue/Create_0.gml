@@ -1,3 +1,4 @@
+event_inherited();
 // Player specific controls
 left_key = vk_left
 right_key = vk_right

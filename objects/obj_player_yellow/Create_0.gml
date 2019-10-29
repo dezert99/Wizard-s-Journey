@@ -1,3 +1,5 @@
+event_inherited();
+
 // Player specific controls
 left_key = ord("J")
 right_key = ord("L")
