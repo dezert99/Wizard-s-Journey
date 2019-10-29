@@ -1,3 +1,5 @@
+//this is a test
+
 // Movement mechanics
 left = keyboard_check(left_key)
 right = keyboard_check(right_key)
