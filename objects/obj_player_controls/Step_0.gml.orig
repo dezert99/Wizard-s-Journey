@@ -1,10 +1,11 @@
+//testing 123
+
 // Movement mechanics
 left = keyboard_check(left_key)
 right = keyboard_check(right_key)
 jump = keyboard_check_pressed(jump_key)
 grounded = place_meeting(x, y+1, obj_ground)
 spell_cast = keyboard_check_pressed(cast_key)
-colliding_with_player = place_meeting(x-23,y+yspd,obj_player_controls);
 
 if left{ // moves left
 	sprite_index = spr_run
