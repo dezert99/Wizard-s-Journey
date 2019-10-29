@@ -22,3 +22,5 @@ grounded = place_meeting(x, y-1, obj_ground)
 // Spell Cast
 cast_key = vk_enter
 attack = obj_player_blue_attack
+
+d_draw_y = 100;

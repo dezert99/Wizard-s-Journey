@@ -8,3 +8,5 @@ grav = 0.5
 grounded = place_meeting(x, y-1, obj_ground)
 
 testCollideCount = 0;
+d_draw_x = 10;
+d_draw_y = 10;
