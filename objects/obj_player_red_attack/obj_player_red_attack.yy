@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_player_red_attack",
     "eventList": [
-        
+        {
+            "id": "bece3ad5-8211-454a-9e9b-90bf8f5ae417",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "31b016fd-f2ca-4dea-9e16-1aec6327e4a4"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

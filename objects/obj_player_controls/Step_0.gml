@@ -3,6 +3,7 @@ left = keyboard_check(left_key)
 right = keyboard_check(right_key)
 jump = keyboard_check_pressed(jump_key)
 grounded = place_meeting(x, y+1, obj_ground)
+//spell_cast = keyboard_check(cast_key)
 
 if left{ // moves left
 	sprite_index = spr_run
@@ -55,3 +56,9 @@ if place_meeting(x, y + yspd, obj_ground){ // land vertical collisions
 
 x += xspd
 y += yspd
+
+//Spell casting
+//if cast_key{
+//	instance_create_depth(x, y, 0, attack)
+//}
+
