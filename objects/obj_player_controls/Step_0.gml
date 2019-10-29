@@ -1,5 +1,3 @@
-//testing 2!
-
 // Movement mechanics
 left = keyboard_check(left_key)
 right = keyboard_check(right_key)
@@ -36,7 +34,7 @@ if grounded{
 }
 
 if (jump and jumps_left > 0) { // player jumps
-	yspd = -10
+	yspd = -12
 	jumps_left--;
 }
 
