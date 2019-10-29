@@ -35,7 +35,7 @@ if grounded{
 }
 
 if (jump and jumps_left > 0) { // player jumps
-	yspd = -10
+	yspd = -12
 	jumps_left--;
 }
 
