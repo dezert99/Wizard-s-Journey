@@ -21,3 +21,4 @@ grounded = place_meeting(x, y-1, obj_ground)
 // Spell Cast
 cast_key = vk_space
 attack = obj_player_red_attack
+mana = 100

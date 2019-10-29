@@ -58,7 +58,10 @@ x += xspd
 y += yspd
 
 // Spell casting
-if spell_cast{
+if spell_cast and mana > 20{
 	instance_create_depth(x, y, 0, attack)
+	mana -= 20
 }
+
+
 
