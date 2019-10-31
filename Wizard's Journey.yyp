@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "4edc7079-b964-4df4-ba49-7aed15982329",
+            "Value": {
+                "id": "da6d4acb-469e-4842-a3e2-8e904cc57766",
+                "resourcePath": "objects\/obj_ground_thin\/obj_ground_thin.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "532f39a8-3868-41e5-8a07-af874ed9bed5",
             "Value": {
                 "id": "2bc1f692-4be2-48fb-92ce-084441894d0e",
@@ -343,6 +351,14 @@
             }
         },
         {
+            "Key": "9e594e6b-1779-48d9-9a90-3fed4692fd18",
+            "Value": {
+                "id": "c2c6b025-c275-468a-af52-7d2da8b34af3",
+                "resourcePath": "objects\/follow_camera\/follow_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9f319912-cacd-43a6-b3e7-ccd89807134c",
             "Value": {
                 "id": "91b3567f-eaf1-4e1b-8318-1ee91fb86f04",
@@ -483,6 +499,14 @@
             "Value": {
                 "id": "3ca9cfb0-7117-4a8b-b8a4-0e9562ac0cb0",
                 "resourcePath": "sprites\/spr_wrecking_ball\/spr_wrecking_ball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f03aac42-0b60-4ff2-91ae-696612828658",
+            "Value": {
+                "id": "543b859c-ad4b-43ea-a7cc-93cd93134b94",
+                "resourcePath": "sprites\/spr_ground_thin\/spr_ground_thin.yy",
                 "resourceType": "GMSprite"
             }
         },
