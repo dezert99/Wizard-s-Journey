@@ -14,3 +14,5 @@ mana = 100
 testCollideCount = 0;
 d_draw_x = 10;
 d_draw_y = 10;
+
+freeze = false;

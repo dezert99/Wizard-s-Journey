@@ -12,3 +12,4 @@ spr_falling = spr_player1_falling
 // Spell Cast
 cast_key = vk_space
 attack = obj_player_red_attack
+

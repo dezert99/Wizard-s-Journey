@@ -4,7 +4,7 @@ right = keyboard_check(right_key)
 jump = keyboard_check_pressed(jump_key)
 grounded = place_meeting(x, y+1, obj_ground)
 spell_cast = keyboard_check_pressed(cast_key)
-colliding_with_player = collision_line(x-22,y+22,x+15,y+22,obj_player_controls,false, true);
+colliding_with_player = collision_rectangle(x-22,y+32,x+15, y+26,obj_player_controls,false, true);
 
 if left{ // moves left
 	sprite_index = spr_run
@@ -35,7 +35,7 @@ if grounded{
 }
 
 if (jump and jumps_left > 0) { // player jumps
-	if(colliding_with_player && colliding_with_player.y-y >=0 && colliding_with_player.y-y <= 16){
+	if(colliding_with_player && colliding_with_player.y-y >=45 && colliding_with_player.y-y <= 64){
 		testCollideCount++;
 	}
 	yspd = -12
@@ -58,8 +58,22 @@ if place_meeting(x, y + yspd, obj_ground){ // land vertical collisions
 	yspd = 0
 }
 
-x += xspd
-y += yspd
+if(!freeze){
+	x += xspd
+	y += yspd	
+}
+else{
+	xspd = 0;
+	yspd = 0;
+}
+
+if(keyboard_check(vk_escape)){
+	freeze = true;
+}
+else{
+	freeze = false;
+}
+
 
 // Spell casting
 if spell_cast and mana > 5{

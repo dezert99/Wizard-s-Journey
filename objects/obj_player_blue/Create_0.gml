@@ -12,3 +12,5 @@ spr_falling = spr_player2_falling
 // Spell Cast
 cast_key = vk_enter
 attack = obj_player_blue_attack
+
+d_draw_y = 100;
