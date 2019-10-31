@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "06602f18-65b3-4cd6-96e6-57e59961e023",
+            "Value": {
+                "id": "db9e6765-a3d5-4612-86e4-de887fff7df0",
+                "resourcePath": "objects\/obj_player_attack\/obj_player_attack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0a2128d0-a50c-4653-b989-eab96e7469fb",
             "Value": {
                 "id": "d4ba895a-44db-467b-a763-bd183d0ec2cd",

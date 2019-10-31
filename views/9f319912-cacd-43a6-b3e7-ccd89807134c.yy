@@ -9,7 +9,8 @@
         "b5c67994-306b-4d17-b1a1-e1faebce3bf6",
         "31b016fd-f2ca-4dea-9e16-1aec6327e4a4",
         "5daf77a1-642d-4924-aa07-60f0194382d2",
-        "03b7f47d-cd7f-4a02-be31-99f06e418375"
+        "03b7f47d-cd7f-4a02-be31-99f06e418375",
+        "06602f18-65b3-4cd6-96e6-57e59961e023"
     ],
     "filterType": "GMObject",
     "folderName": "Players and Attacks",
