@@ -35,11 +35,14 @@ if grounded{
 }
 
 if (jump) { // player jumps
-	if(colliding_with_player && colliding_with_player.y-y >=45 && colliding_with_player.y-y <= 64){
-		testCollideCount++;
+	if(colliding_with_player && colliding_with_player.y-y >=25 && colliding_with_player.y-y <= 64){
+		colliding_with_player.yspd = 6;
+		jumps_left++;
 	}
-	yspd = -12
-	jumps_left--;
+	if(jumps_left > 0){
+		yspd = -12
+		jumps_left--;
+	}
 }
 
 if place_meeting(x + xspd, y, obj_ground){ // land horizontal collisions
