@@ -8,6 +8,7 @@ spr_idle = spr_player2_idle
 spr_run = spr_player2_run
 spr_jump = spr_player2_jump
 spr_falling = spr_player2_falling
+spr_indicator = spr_player2_indicator
 
 // Spell Cast
 cast_key = vk_enter

@@ -2,7 +2,7 @@
 left = keyboard_check(left_key)
 right = keyboard_check(right_key)
 jump = keyboard_check_pressed(jump_key)
-grounded = place_meeting(x, y+1, obj_ground) or place_meeting(x, y+1, obj_ground_thin) or place_meeting(x, y+1, obj_wood)
+grounded = place_meeting(x, y+1, obj_ground) or place_meeting(x, y+1, obj_ground_thin) or place_meeting(x, y+1, obj_slime)
 spell_cast = keyboard_check_pressed(cast_key)
 colliding_with_player = collision_rectangle(x-22,y+32,x+15, y+26,obj_player_controls,false, true);
 
@@ -81,5 +81,12 @@ if spell_cast and mana > 5{
 	mana -= 5
 }
 
+// Invincibility
+if invincible_timer > 0{
+    invincible_timer -= 1
+    invincible = true
+} else{
+    invincible = false
+}
 
 

@@ -9,6 +9,7 @@ spr_idle = spr_player3_idle
 spr_run = spr_player3_run
 spr_jump = spr_player3_jump
 spr_falling = spr_player3_falling
+spr_indicator = spr_player3_indicator
 
 // Spell Cast
 cast_key = vk_shift
