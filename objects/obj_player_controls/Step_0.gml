@@ -4,7 +4,7 @@ right = keyboard_check(right_key)
 jump = keyboard_check_pressed(jump_key)
 grounded = place_meeting(x, y+1, obj_ground) or place_meeting(x, y+1, obj_ground_thin) or place_meeting(x, y+1, obj_slime)
 spell_cast = keyboard_check_pressed(cast_key)
-colliding_with_player = collision_rectangle(x-22,y+32,x+15, y+26,obj_player_controls,false, true);
+colliding_with_player = collision_rectangle(x-22,y+38,x+15, y+26,obj_player_controls,false, true);
 
 if left{ // moves left
 	sprite_index = spr_run
@@ -34,12 +34,15 @@ if grounded{
 	}
 }
 
-if (jump and jumps_left > 0) { // player jumps
-	if(colliding_with_player && colliding_with_player.y-y >=45 && colliding_with_player.y-y <= 64){
-		testCollideCount++;
+if (jump) { // player jumps
+	if(colliding_with_player && colliding_with_player.y-y >=25 && colliding_with_player.y-y <= 64){
+		colliding_with_player.yspd = 6;
+		jumps_left++;
 	}
-	yspd = -12
-	jumps_left--;
+	if(jumps_left > 0){
+		yspd = -12
+		jumps_left--;
+	}
 }
 
 if place_meeting(x + xspd, y, obj_ground) or place_meeting(x + xspd, y, obj_ground_thin){ // land horizontal collisions
