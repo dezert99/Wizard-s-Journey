@@ -16,3 +16,7 @@ d_draw_x = 10;
 d_draw_y = 10;
 
 freeze = false;
+
+// Invincibility
+invincible = false
+invincible_timer = 0
