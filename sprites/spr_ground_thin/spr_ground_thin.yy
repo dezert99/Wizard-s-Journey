@@ -40,7 +40,7 @@
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 64,
+    "height": 45,
     "layers": [
         {
             "id": "236620f5-ae01-4f7d-9621-94bd88ef5949",
