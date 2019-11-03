@@ -10,7 +10,13 @@ if invincible{
 	} else{
 		draw_self()
 	}
-} else{
+} 
+else if frozen{
+	image_blend = make_color_rgb(0,100,255)
 	draw_self()
+}
+else{
+	draw_self()
+	image_blend = c_white;
 }
 

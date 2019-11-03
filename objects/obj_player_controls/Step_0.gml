@@ -6,6 +6,16 @@ grounded = place_meeting(x, y+1, obj_ground) or place_meeting(x, y+1, obj_slime)
 spell_cast = keyboard_check_pressed(cast_key)
 colliding_with_player = collision_rectangle(x-22,y+38,x+15, y+26,obj_player_controls,false, true);
 
+//hit
+if(hit){
+	mana -= damage;
+	damage = 0;
+	hit = false;
+	invincible = true;
+	invincible_timer = invincible_timer_max;
+}
+
+
 if left{ // moves left
 	sprite_index = spr_run
 	image_xscale = -1
@@ -61,7 +71,7 @@ if place_meeting(x, y + yspd, obj_ground){ // land vertical collisions
 	yspd = 0
 }
 
-if(!freeze){
+if(!frozen){
 	x += xspd
 	y += yspd	
 }
@@ -70,17 +80,24 @@ else{
 	yspd = 0;
 }
 
-if(keyboard_check(vk_escape)){
-	freeze = true;
+if(keyboard_check_pressed(vk_escape)){
+	frozen = true;
+	frozen_timer = frozen_timer_max
 }
-else{
-	freeze = false;
-}
-
 
 // Spell casting
 if spell_cast and mana > 5{
-	instance_create_depth(x, y, 0, attack)
+	inst = instance_create_depth(x, y, 0, attack)
+	if(image_xscale == -1) { // player facing left){
+		inst.travel_direction = "left"
+		inst.ignore = id;
+		inst.damage = spell_damage;
+	}
+	else {
+		inst.travel_direction = "right"	
+		inst.ignore = id;
+		inst.damage = spell_damage;
+	}
 	mana -= 5
 }
 
@@ -91,5 +108,14 @@ if invincible_timer > 0{
 } else{
     invincible = false
 }
+
+// Freeze
+if frozen_timer > 0{
+    frozen_timer -= 1
+    frozen = true
+} else{
+    frozen = false
+}
+
 
 
