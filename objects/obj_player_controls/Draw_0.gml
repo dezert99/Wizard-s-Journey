@@ -1,6 +1,6 @@
 //foot hitbox display
 //draw_rectangle(x-22,y+38,x+15,y+26, true);
-
+draw_self();
 // Invincibility
 if invincible{
 	if invincible_timer mod 10 > 5{

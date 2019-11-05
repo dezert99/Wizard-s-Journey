@@ -26,7 +26,14 @@ invincible = false
 invincible_timer = 0
 invincible_timer_max = 60
 
+// Fallen
+fallen = false
+fallen_timer = 0
+fallen_timer_max = 60
+
 hit = true;
 damage = 0;
 
 finished = false;
+
+dead = false;

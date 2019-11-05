@@ -71,7 +71,7 @@ if place_meeting(x, y + yspd, obj_ground){ // land vertical collisions
 	yspd = 0
 }
 
-if(!frozen && !finished){
+if(!frozen && !finished && !dead){
 	x += xspd
 	y += yspd	
 }
@@ -116,7 +116,22 @@ if frozen_timer > 0{
     frozen = false
 }
 
-if(y<315){
+// Fallen
+if (fallen_timer > 0 && !dead){
+    fallen_timer -= 1
+    fallen = true
+} else{
+	if(fallen == true && !dead){
+		var telport = instance_nearest(x,y,obj_teleport_point);
+		x = telport.x;
+		y = telport.y;
+		invincible = true;
+		invincible_timer = invincible_timer_max;
+		mana -= 20;
+	}
+	fallen = false
+}
+if(y<315 && !finished){
 	var name = object_get_name(object_index);
 	if(name == "obj_player_red"){
 		WIN_ORDER[WIN_POS] = "Red player";
@@ -127,7 +142,17 @@ if(y<315){
 	else if(name == "obj_player_yellow"){
 		WIN_ORDER[WIN_POS] = "Yellow player";
 	}
+	WIN_POS++;
 	finished = true;
+}
+
+if (y > camera_get_view_y(view_camera[0]) + view_hport[0] && !fallen){ //if player is below the camera
+    fallen = true;
+	fallen_timer = fallen_timer_max;
+}
+
+if(mana <= 0){
+	dead = true;
 }
 
 
