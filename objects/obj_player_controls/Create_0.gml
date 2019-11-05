@@ -11,7 +11,7 @@ grounded = place_meeting(x, y-1, obj_ground)
 // Spell Casting
 mana = 100
 spell_damage = 10;
-attack_effect = "damage";
+attack_type = "damage";
 
 testCollideCount = 0;
 d_draw_x = 10;
@@ -28,3 +28,5 @@ invincible_timer_max = 60
 
 hit = true;
 damage = 0;
+
+finished = false;

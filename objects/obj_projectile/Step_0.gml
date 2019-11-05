@@ -17,7 +17,7 @@ if place_meeting(x, y, obj_player_controls){ //detects if there is a collision w
 	instance_destroy()
 }
 
-if place_meeting(x, y, obj_ground){
+if place_meeting(x, y, obj_ground) || hit{
 	var poof = instance_create_depth(x, y, 0, obj_poof)
 	with poof{
 		image_xscale = 0.25

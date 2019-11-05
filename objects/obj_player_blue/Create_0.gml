@@ -13,6 +13,6 @@ spr_indicator = spr_player2_indicator
 // Spell Cast
 cast_key = vk_enter
 attack = obj_player_blue_attack
-attack_effect = "freeze"
+attack_type = "freeze"
 
 d_draw_y = 100;

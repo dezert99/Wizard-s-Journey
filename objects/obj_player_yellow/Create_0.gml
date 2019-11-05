@@ -16,3 +16,5 @@ cast_key = vk_shift
 attack = obj_player_yellow_attack
 
 d_draw_y = 200;
+
+attack_type = "freeze"

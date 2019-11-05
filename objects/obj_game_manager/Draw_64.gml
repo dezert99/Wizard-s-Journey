@@ -3,6 +3,7 @@ if timer > 0{ // draws timer
 	draw_text_transformed(view_wport[0]/2, view_hport[0]/2, string(ceil(timer/60)), 2, 2, 0)
 }
 
+
 // Mana bars
 // Red player
 draw_sprite(spr_mana_bar, 0, 210, 30)

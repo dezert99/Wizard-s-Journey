@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "97571e83-9151-42e8-b2a5-804b95c14124",
+            "Value": {
+                "id": "ed3f71a9-0c84-45b4-a1f1-17bc83703fde",
+                "resourcePath": "objects\/obj_victory_point\/obj_victory_point.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9f319912-cacd-43a6-b3e7-ccd89807134c",
             "Value": {
                 "id": "91b3567f-eaf1-4e1b-8318-1ee91fb86f04",

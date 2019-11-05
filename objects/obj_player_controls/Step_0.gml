@@ -71,7 +71,7 @@ if place_meeting(x, y + yspd, obj_ground){ // land vertical collisions
 	yspd = 0
 }
 
-if(!frozen){
+if(!frozen && !finished){
 	x += xspd
 	y += yspd	
 }
@@ -80,25 +80,24 @@ else{
 	yspd = 0;
 }
 
-if(keyboard_check_pressed(vk_escape)){
-	frozen = true;
-	frozen_timer = frozen_timer_max
-}
-
 // Spell casting
 if spell_cast and mana > 5{
 	inst = instance_create_depth(x, y, 0, attack)
 	if(image_xscale == -1) { // player facing left){
 		inst.travel_direction = "left"
-		inst.ignore = id;
-		inst.damage = spell_damage;
+		
 	}
 	else {
 		inst.travel_direction = "right"	
-		inst.ignore = id;
+	}
+	if(attack_type == "damage"){
 		inst.damage = spell_damage;
 	}
+	inst.attack_type = attack_type;
+	inst.ignore = id;
+	inst.damage = spell_damage;
 	mana -= 5
+	
 }
 
 // Invincibility
@@ -116,6 +115,22 @@ if frozen_timer > 0{
 } else{
     frozen = false
 }
+
+if(y<315){
+	var name = object_get_name(object_index);
+	if(name == "obj_player_red"){
+		WIN_ORDER[WIN_POS] = "Red player";
+	}
+	else if(name == "obj_player_blue"){
+		WIN_ORDER[WIN_POS] = "Blue player";
+	}
+	else if(name == "obj_player_yellow"){
+		WIN_ORDER[WIN_POS] = "Yellow player";
+	}
+	finished = true;
+}
+
+
 
 
 
