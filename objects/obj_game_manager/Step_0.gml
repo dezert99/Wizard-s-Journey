@@ -1,7 +1,7 @@
 if timer > 0{
 	timer -= 1
 } else{
-	camera_y -= 0.6 // camera movement up (pixels per frame)
+	camera_y -= 1 // camera movement up (pixels per frame)
 	camera_y = clamp(camera_y, 0, room_height) // stops the camera at the top of the tower
 }
 
@@ -18,6 +18,6 @@ if keyboard_check_pressed(vk_escape){ // fullscreen
 } 
 
 if(LIVING==0){
-	room_goto(rm_gameover);	
+	room_goto(rm_game_over);	
 	LIVING = -1;
 }

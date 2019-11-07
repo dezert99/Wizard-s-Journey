@@ -21,6 +21,15 @@ if(collide_with_player && collide_with_player != ignore){
 		collide_with_player.frozen = true;
 		collide_with_player.frozen_timer = collide_with_player.frozen_timer_max;
 	}
+	else if(attack_type = "knockback"){
+		collide_with_player.knockback_timer = collide_with_player.knockback_timer_max;
+		if(travel_direction == "left"){
+			collide_with_player.knockback_direction = -1;
+		}
+		else {
+			collide_with_player.knockback_direction = 1;
+		}
+	}
 	
 	instance_destroy();
 } else if(collide_with_arrow){

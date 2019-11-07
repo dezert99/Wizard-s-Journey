@@ -55,6 +55,19 @@ if (jump) { // player jumps
 	}
 }
 
+//Knockback
+
+if(knockback_timer > 0){
+	knockback_timer--;
+	xspd = 1.25*mspd*knockback_direction;
+	knockback = true;
+}
+else{
+	knockback = false;
+	knockback_direction = 0;
+}
+
+
 if place_meeting(x + xspd, y, obj_ground){ // land horizontal collisions
 	while !place_meeting(x + sign(xspd), y, obj_ground){
 		x += sign(xspd)
@@ -107,6 +120,9 @@ if invincible_timer > 0{
     invincible_timer -= 1
     invincible = true
 } else{
+	if(dead){
+		y= -100000;	
+	}
     invincible = false
 }
 
@@ -140,7 +156,9 @@ if (fallen_timer > 0 && !dead){
 	}
 	fallen = false
 }
-if(y<315 && !finished){
+
+
+if(y<315 && !finished && !dead){
 	var name = object_get_name(object_index);
 	if(name == "obj_player_red"){
 		WIN_ORDER[0] = WIN_POS;

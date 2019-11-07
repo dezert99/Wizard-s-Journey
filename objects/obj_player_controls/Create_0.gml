@@ -26,6 +26,11 @@ invincible = false
 invincible_timer = 0
 invincible_timer_max = 60
 
+knockback = false
+knockback_direction = 1 // 1 right -1 left
+knockback_timer = 0;
+knockback_timer_max = 10;
+
 // Fallen
 fallen = false
 fallen_timer = 0
