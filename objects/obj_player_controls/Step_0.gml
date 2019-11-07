@@ -81,7 +81,7 @@ else{
 }
 
 // Spell casting
-if spell_cast and mana > 5{
+if (spell_cast and mana > 5 && can_cast){
 	inst = instance_create_depth(x, y, 0, attack)
 	if(image_xscale == -1) { // player facing left){
 		inst.travel_direction = "left"
@@ -96,7 +96,9 @@ if spell_cast and mana > 5{
 	inst.attack_type = attack_type;
 	inst.ignore = id;
 	inst.damage = spell_damage;
-	mana -= 5
+	mana -= 5;
+	can_cast = false;
+	cast_timer = cast_timer_max;
 	
 }
 
@@ -116,6 +118,13 @@ if frozen_timer > 0{
     frozen = false
 }
 
+// Cast
+if cast_timer > 0{
+    cast_timer -= 1
+	can_cast = false;
+} else{
+    can_cast = true
+}
 // Fallen
 if (fallen_timer > 0 && !dead){
     fallen_timer -= 1

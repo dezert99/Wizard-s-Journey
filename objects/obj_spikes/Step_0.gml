@@ -10,10 +10,8 @@ if image_index + image_speed < 0 image_speed = 1;
 
 if place_meeting(x, y, obj_player_controls){ //detects if there is a collision with ANY player
 	var player = instance_nearest(x, y, obj_player_controls) //detects who is being hurt
-	with player {
-		if not invincible{
-            mana -= 10
-            invincible_timer = 60
-        }
+	if(!player.invincible && can_do_damage){
+		player.hit = true;
+		player.damage = 10;
 	}
 }

@@ -1,4 +1,4 @@
-show_collision = true;
+show_collision = false;
 collision_radius = 30;
 
 attack_type = "damage"

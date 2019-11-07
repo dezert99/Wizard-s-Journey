@@ -31,6 +31,11 @@ fallen = false
 fallen_timer = 0
 fallen_timer_max = 60
 
+// Cast
+can_cast = true;
+cast_timer = 0;
+cast_timer_max = 60;
+
 hit = true;
 damage = 0;
 
