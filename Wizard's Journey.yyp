@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0a5bf1ed-370c-4f7f-ac06-2ef7922d6b2c",
+            "Value": {
+                "id": "0cd1dd05-ba15-406e-9699-a426039fcd97",
+                "resourcePath": "objects\/obj_blue_confetti\/obj_blue_confetti.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0bf7f1f8-1eb8-48fc-ac6a-9ae657efc463",
             "Value": {
                 "id": "8399d481-bc47-4027-8e4d-99cdeab01088",
@@ -183,6 +191,14 @@
             }
         },
         {
+            "Key": "4110af9a-5e7c-4cf8-8d41-7f8e3a248ab1",
+            "Value": {
+                "id": "6fcfd61e-3db9-4a04-8597-74d5ee2adf5d",
+                "resourcePath": "sprites\/spr_blue_confetti\/spr_blue_confetti.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "41982b15-5a3c-4884-a49f-6ddd78d32480",
             "Value": {
                 "id": "948bed22-b251-405d-a74a-b279e0b78f07",
@@ -227,6 +243,14 @@
             "Value": {
                 "id": "da6d4acb-469e-4842-a3e2-8e904cc57766",
                 "resourcePath": "objects\/obj_ground_thin\/obj_ground_thin.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "50a83cc6-a64e-4c63-9cf9-718d0d13c8ca",
+            "Value": {
+                "id": "54346a27-978f-4d52-8446-8832b477ca6a",
+                "resourcePath": "objects\/obj_red_confetti\/obj_red_confetti.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -308,6 +332,14 @@
                 "id": "6fa14499-6ad3-4222-ae1f-7f5d7a22d8c9",
                 "resourcePath": "sprites\/spr_player3_run\/spr_player3_run.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7a1a2e55-44c9-407c-ab2f-ada1e63fc70d",
+            "Value": {
+                "id": "c1cec6b8-c0c9-42f3-adf9-18677ddc719c",
+                "resourcePath": "objects\/obj_yellow_confetti\/obj_yellow_confetti.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -575,10 +607,18 @@
             }
         },
         {
+            "Key": "cf57245d-4744-4db2-9c7c-1b54c5288271",
+            "Value": {
+                "id": "1d75117b-d3c0-44c6-94b1-9c265963874b",
+                "resourcePath": "objects\/obj_confetti_gen\/obj_confetti_gen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d85a64b5-f1f7-4c0f-b827-e1aa662348ec",
             "Value": {
                 "id": "f17e14fa-1348-4779-8fef-ca54fa9d46d7",
-                "resourcePath": "rooms\/rm_gameover\/rm_gameover.yy",
+                "resourcePath": "rooms\/rm_game_over\/rm_game_over.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -596,6 +636,22 @@
                 "id": "bf6170f1-251b-4c1a-8bb0-72999d9d8896",
                 "resourcePath": "objects\/obj_spikes\/obj_spikes.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dc43c70b-678d-4354-8a75-b084b24ec674",
+            "Value": {
+                "id": "c18ac030-a8e0-412a-8b8a-7764613b033f",
+                "resourcePath": "sprites\/spr_red_confetti\/spr_red_confetti.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e5267b94-8569-49a5-af6e-eb45b85158b2",
+            "Value": {
+                "id": "3ebe6089-b9f5-406a-a687-04c1768ba49e",
+                "resourcePath": "sprites\/spr_yellow_confetti\/spr_yellow_confetti.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
