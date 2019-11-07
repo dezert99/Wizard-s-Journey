@@ -1,4 +1,4 @@
-max_confetti = 60 //maximum number of confetti
+max_confetti = 90 //maximum number of confetti
 
 if WIN_ORDER[0] == 1{ // red wins
 	for(i = 0; i < max_confetti; i += 1){

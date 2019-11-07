@@ -18,6 +18,6 @@ if keyboard_check_pressed(vk_escape){ // fullscreen
 } 
 
 if(LIVING==0){
-	room_goto(rm_gameover);	
+	room_goto(rm_game_over);	
 	LIVING = -1;
 }

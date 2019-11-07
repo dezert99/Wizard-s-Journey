@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "21903a58-1e86-4c2b-aa8f-1728f616d193",
+            "Value": {
+                "id": "b8096fac-f016-4f62-9db3-fcf3bcf266b6",
+                "resourcePath": "sprites\/spr_yellow_confetti\/spr_yellow_confetti.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "266f3e24-6af0-4a18-b739-43c3ca20fa49",
             "Value": {
                 "id": "4c16875a-c933-4f7b-8989-cef38a2384a7",
@@ -567,6 +575,14 @@
             }
         },
         {
+            "Key": "ba913b00-c988-4fba-b031-027493e61518",
+            "Value": {
+                "id": "63c8f014-db4e-4afa-8fbe-380c1be23a8d",
+                "resourcePath": "sprites\/spr_red_confetti\/spr_red_confetti.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "babe3c05-b0dd-417c-b33d-8101540acdd1",
             "Value": {
                 "id": "42db5ad9-5912-4e16-9ca6-719edb4feb3d",
@@ -636,22 +652,6 @@
                 "id": "bf6170f1-251b-4c1a-8bb0-72999d9d8896",
                 "resourcePath": "objects\/obj_spikes\/obj_spikes.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "dc43c70b-678d-4354-8a75-b084b24ec674",
-            "Value": {
-                "id": "c18ac030-a8e0-412a-8b8a-7764613b033f",
-                "resourcePath": "sprites\/spr_red_confetti\/spr_red_confetti.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "e5267b94-8569-49a5-af6e-eb45b85158b2",
-            "Value": {
-                "id": "3ebe6089-b9f5-406a-a687-04c1768ba49e",
-                "resourcePath": "sprites\/spr_yellow_confetti\/spr_yellow_confetti.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
