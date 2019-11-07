@@ -527,6 +527,14 @@
             }
         },
         {
+            "Key": "b95b91ba-ab2e-4f3c-afe9-65bad5ae8277",
+            "Value": {
+                "id": "cc7d5d4a-e3ed-4678-a106-17b66ba5e57f",
+                "resourcePath": "fonts\/font0\/font0.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "babe3c05-b0dd-417c-b33d-8101540acdd1",
             "Value": {
                 "id": "42db5ad9-5912-4e16-9ca6-719edb4feb3d",
@@ -564,6 +572,14 @@
                 "id": "f57b4b56-16b8-4211-8782-05f12e9f5d9f",
                 "resourcePath": "options\/windows\/options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d85a64b5-f1f7-4c0f-b827-e1aa662348ec",
+            "Value": {
+                "id": "f17e14fa-1348-4779-8fef-ca54fa9d46d7",
+                "resourcePath": "rooms\/rm_gameover\/rm_gameover.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

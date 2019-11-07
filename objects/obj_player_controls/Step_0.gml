@@ -143,16 +143,17 @@ if (fallen_timer > 0 && !dead){
 if(y<315 && !finished){
 	var name = object_get_name(object_index);
 	if(name == "obj_player_red"){
-		WIN_ORDER[WIN_POS] = "Red player";
+		WIN_ORDER[0] = WIN_POS;
 	}
 	else if(name == "obj_player_blue"){
-		WIN_ORDER[WIN_POS] = "Blue player";
+		WIN_ORDER[1] = WIN_POS;
 	}
 	else if(name == "obj_player_yellow"){
-		WIN_ORDER[WIN_POS] = "Yellow player";
+		WIN_ORDER[2] = WIN_POS;
 	}
 	WIN_POS++;
 	finished = true;
+	LIVING--;
 }
 
 if (y > camera_get_view_y(view_camera[0]) + view_hport[0] && !fallen){ //if player is below the camera
@@ -160,8 +161,9 @@ if (y > camera_get_view_y(view_camera[0]) + view_hport[0] && !fallen){ //if play
 	fallen_timer = fallen_timer_max;
 }
 
-if(mana <= 0){
+if(mana <= 0 && !dead){
 	dead = true;
+	LIVING--;
 }
 
 

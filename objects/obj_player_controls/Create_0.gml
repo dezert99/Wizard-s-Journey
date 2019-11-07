@@ -42,3 +42,5 @@ damage = 0;
 finished = false;
 
 dead = false;
+
+LIVING++;
