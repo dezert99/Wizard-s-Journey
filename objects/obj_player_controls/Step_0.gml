@@ -130,8 +130,10 @@ if invincible_timer > 0{
 if frozen_timer > 0{
     frozen_timer -= 1
     frozen = true
+	image_speed = 0;
 } else{
     frozen = false
+	image_speed = 1;
 }
 
 // Cast
