@@ -94,7 +94,7 @@ else{
 }
 
 // Spell casting
-if (spell_cast and mana > 5 && can_cast){
+if (spell_cast and mana > 5 && can_cast && !frozen){
 	inst = instance_create_depth(x, y, 0, attack)
 	if(image_xscale == -1) { // player facing left){
 		inst.travel_direction = "left"
@@ -158,7 +158,7 @@ if (fallen_timer > 0 && !dead){
 }
 
 
-if(y<315 && !finished && !dead){
+if(y<315 && !finished && !dead && room == rm_tower){
 	var name = object_get_name(object_index);
 	if(name == "obj_player_red"){
 		WIN_ORDER[0] = WIN_POS;
