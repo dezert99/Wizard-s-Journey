@@ -15,3 +15,6 @@ cast_key = vk_space
 attack = obj_player_red_attack
 
 attack_type = "knockback";
+
+//End Placement
+random_place = random_range(768, 960)

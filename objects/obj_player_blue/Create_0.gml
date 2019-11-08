@@ -16,3 +16,6 @@ attack = obj_player_blue_attack
 attack_type = "freeze"
 
 d_draw_y = 100;
+
+//End Placement
+random_place = random_range(768, 960)

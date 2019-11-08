@@ -1,3 +1,5 @@
+randomize()
+
 // Imported from parent
 xspd = 0
 yspd = 0
@@ -49,3 +51,7 @@ finished = false;
 dead = false;
 
 LIVING++;
+
+
+// End Plancement
+placed = false

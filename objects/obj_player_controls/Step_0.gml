@@ -184,6 +184,11 @@ if(mana <= 0 && !dead){
 	LIVING--;
 }
 
+if room == rm_game_over{
+	mana = 100
+}
+
+
 
 
 
