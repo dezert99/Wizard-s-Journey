@@ -8,6 +8,7 @@ colliding_with_player = collision_rectangle(x-22,y+38,x+15, y+26,obj_player_cont
 
 //hit
 if(hit){
+	audio_play_sound(snd_jump, 1, false)
 	mana -= damage;
 	damage = 0;
 	hit = false;
@@ -50,6 +51,7 @@ if (jump) { // player jumps
 		jumps_left++;
 	}
 	if(jumps_left > 0){
+		audio_play_sound(snd_jump, 1, false)
 		yspd = -12
 		jumps_left--;
 	}
