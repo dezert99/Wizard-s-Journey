@@ -165,7 +165,7 @@ if (fallen_timer > 0 && !dead){
 	fallen = false
 }
 
-if(y<315 && !finished && !dead){
+if(y<315 && !finished && !dead) and room != rm_game_over{
 	var name = object_get_name(object_index);
 	if(name == "obj_player_red"){
 		WIN_ORDER[0] = WIN_POS;
