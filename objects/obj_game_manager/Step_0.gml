@@ -17,7 +17,9 @@ if keyboard_check_pressed(vk_escape){ // fullscreen
 	}
 } 
 
-if(LIVING==0){
-	room_goto(rm_game_over);	
-	LIVING = -1;
+if room == rm_tower{
+	if(LIVING==0){
+		room_goto(rm_game_over);	
+		LIVING = -1;
+	}
 }

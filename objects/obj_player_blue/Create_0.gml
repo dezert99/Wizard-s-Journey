@@ -23,3 +23,4 @@ random_place = random_range(768, 960)
 //Sounds
 snd_jump = snd_jump2
 snd_hit = snd_hit2
+snd_attack = snd_attack2
