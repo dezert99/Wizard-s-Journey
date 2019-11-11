@@ -6,8 +6,14 @@ grounded = place_meeting(x, y+1, obj_ground) or place_meeting(x, y+1, obj_slime)
 spell_cast = keyboard_check_pressed(cast_key)
 colliding_with_player = collision_rectangle(x-22,y+38,x+15, y+26,obj_player_controls,false, true);
 
+//End Room
+if room == rm_game_over{
+	mana = 100
+}
+
 //hit
 if(hit){
+	audio_play_sound(snd_hit, 1, false)
 	mana -= damage;
 	damage = 0;
 	hit = false;
@@ -50,6 +56,7 @@ if (jump) { // player jumps
 		jumps_left++;
 	}
 	if(jumps_left > 0){
+		audio_play_sound(snd_jump, 1, false)
 		yspd = -12
 		jumps_left--;
 	}
@@ -96,6 +103,7 @@ else{
 // Spell casting
 if (spell_cast and mana > 5 && can_cast && !frozen){
 	inst = instance_create_depth(x, y, 0, attack)
+	audio_play_sound(snd_attack, 1, false)
 	if(image_xscale == -1) { // player facing left){
 		inst.travel_direction = "left"
 		
@@ -159,8 +167,7 @@ if (fallen_timer > 0 && !dead){
 	fallen = false
 }
 
-
-if(y<315 && !finished && !dead && room == rm_tower){
+if(y<315 && !finished && !dead) and room != rm_game_over{
 	var name = object_get_name(object_index);
 	if(name == "obj_player_red"){
 		WIN_ORDER[0] = WIN_POS;
@@ -184,10 +191,6 @@ if (y > camera_get_view_y(view_camera[0]) + view_hport[0] && !fallen){ //if play
 if(mana <= 0 && !dead){
 	dead = true;
 	LIVING--;
-}
-
-if room == rm_game_over{
-	mana = 100
 }
 
 

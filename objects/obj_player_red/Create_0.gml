@@ -18,3 +18,8 @@ attack_type = "knockback";
 
 //End Placement
 random_place = random_range(768, 960)
+
+//Sounds
+snd_jump = snd_jump1
+snd_hit = snd_jump1
+snd_attack = snd_attack1
