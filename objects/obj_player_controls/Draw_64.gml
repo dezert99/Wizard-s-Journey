@@ -1,4 +1,4 @@
-draw_text(d_draw_x,d_draw_y,fallen);
+//draw_text(d_draw_x,d_draw_y,fallen);
 
 // Indicator
 if fallen{ //if player is below the camera
