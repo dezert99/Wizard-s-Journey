@@ -16,3 +16,5 @@ globalvar GAME_STATE;
 GAME_STATE = 1 // 0 = menu 1 = playing 2 = game over
 
 audio_play_sound(snd_background_music,1,true);
+
+reset = false;
