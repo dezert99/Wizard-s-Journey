@@ -1,9 +1,10 @@
 if(room = rm_tower){
-	if timer > 0{ // draws timer
+	if timer > 0{ // draws timer and title
 		draw_set_halign(fa_center)
+		draw_set_color(make_colour_rgb(47, 255, 35))
 		draw_text_transformed(view_wport[0]/2, view_hport[0]/2, string(ceil(timer/60)), 2, 2, 0)
+		draw_sprite(spr_title, 0, view_wport[0]/2, view_hport[0]/2 - 250)
 	}
-
 
 	// Mana bars
 	// Red player
